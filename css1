@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Noto+Serif+Display:wght@300&display=swap');
+
+body, html {
+  height: 100%;
+}
+
+.container{
+  background-image: url(https://georgetownvoice.com/wp-content/uploads/2020/09/promo_04.png);
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position:relative;
+}
+
+.title{
+  position:absolute;
+  bottom:350px;
+  left:1050px;
+}
+
+h2{
+  font-family:'Noto Serif Display', serif;
+  text-transform:uppercase;
+  background: -webkit-linear-gradient(#fff, #41CAE7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #41CAE7;
+  font-size:50px;
+  text-shadow:
+    0 0 50px #81E6FF,
+    0 0 5px #43D5F8, 
+    0 0 90px
+    #43D5F8, 
+    0 0 60px
+    #43D5F8,
+    0 0 100px
+    #43D5F8;
+    animation: pulsate 1.5s infinite alternate;
+}
+
+@keyframes pulsate {
+  50%, 100% {
+    text-shadow:
+      0 0 4px #43D5F8,
+      0 0 11px #43D5F8,
+      0 0 19px #43D5F8,
+      0 0 40px #43D5F8,
+      0 0 80px #43D5F8,
+      0 0 90px #43D5F8,
+      0 0 100px #43D5F8,
+      0 0 150px #43D5F8;
+  }
+}
